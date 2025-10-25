@@ -1,0 +1,81 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #b30000; /* Red strip */
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+
+}
+
+.scroll-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 18s linear infinite;
+}
+
+.scroll-text span {
+  display: inline-block;
+  padding-right: 200px;
+}
+
+/* Animation for continuous loop */
+@keyframes scrollText {
+  0% {
+    transform: translateX(20%);
+  }
+  80% {
+    transform: translateX(80%);
+  }
+}
+
+
+
+
+
+/* ======================= */
+/* Mobile View (Topbar)    */
+/* ======================= */
+@media screen and (max-width: 480px) {
+
+  .topbar {
+    font-size: 10px;
+    height: 16px;
+    padding: 0 5px;
+  }
+
+  .scroll-container {
+    width: 100%;
+  }
+
+  .scroll-text {
+    animation: scrollTextMobile 15s linear infinite;
+  }
+
+  .scroll-text span {
+    padding-right: 100px;
+  }
+
+  /* Simplified animation for smaller screens */
+  @keyframes scrollTextMobile {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}

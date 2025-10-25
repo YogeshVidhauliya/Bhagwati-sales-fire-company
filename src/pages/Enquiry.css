@@ -1,0 +1,162 @@
+/* ======================= */
+/* Enquiry Page & Form CSS  */
+/* ======================= */
+
+/* Page container */
+.page {
+  margin-top: 20px;
+  padding: 3px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffe5e0;
+  min-height: 50vh;
+  color: #b81010fd;
+  font-weight: 600;
+}
+
+/* Add spacing for heading under fixed navbar */
+.page h1 {
+  margin-top: 60px; /* default space */
+  text-align: center;
+  color: #b22222;
+  font-size: 2rem;
+}
+
+/* Enquiry Form */
+.enquiry-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 900px;
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #fff5f5);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.enquiry-form * {
+  box-sizing: border-box;
+}
+
+.enquiry-form label {
+  font-weight: 600;
+  color: #b22222;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border-color: crimson;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(220,20,60,0.4);
+  outline: none;
+}
+
+.enquiry-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.enquiry-form button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, crimson, #b22222);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: 40%;
+  margin-left: 30%;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enquiry-form button:hover {
+  background: linear-gradient(135deg, #ff4d4d, #b22222);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.enquiry-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ======================= */
+/* Responsive Enquiry Form  */
+/* ======================= */
+@media (max-width: 1024px) {
+  .page h1 {
+    margin-top: 70px; /* more space for larger fixed navbar */
+  }
+
+  .enquiry-form {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .enquiry-form button {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page h1 {
+    margin-top: 80px; /* space under navbar */
+    font-size: 1.8rem;
+  }
+
+  .enquiry-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .enquiry-form button {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+}
+
+/* ======================= */
+/* Mobile Specific Tweaks   */
+/* ======================= */
+@media screen and (max-width: 480px) {
+  .page h1 {
+    margin-top: 100px;
+    font-size: 1.6rem;
+  }
+
+  .enquiry-form {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .enquiry-form button {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+  }
+}

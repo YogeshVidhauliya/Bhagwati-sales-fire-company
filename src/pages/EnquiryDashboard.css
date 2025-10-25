@@ -1,0 +1,97 @@
+.page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.enquiry-table th,
+.enquiry-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.enquiry-table th {
+  background-color: #f0f0f0;
+}
+
+.enquiry-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #ff7875;
+}
+
+
+
+
+
+/* ======================= */
+/* Fix for Mobile Navbar Overlap */
+/* ======================= */
+@media screen and (max-width: 480px) {
+
+  /* Give breathing space below the fixed navbar */
+  .page {
+    padding-top: 80px; /* add space so content starts below navbar */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Table responsive layout */
+  .enquiry-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .enquiry-table th,
+  .enquiry-table td {
+    font-size: 13px;
+    padding: 8px;
+    white-space: nowrap;
+  }
+
+  .delete-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
+
+/* ======================= */
+/* Optional: For large phones like iPhone 14 Pro Max */
+/* ======================= */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .page {
+    padding-top: 90px; /* slightly more space for tall navbar phones */
+  }
+}

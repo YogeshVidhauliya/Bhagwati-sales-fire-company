@@ -1,0 +1,125 @@
+/* ======================= */
+/* Training Page CSS       */
+/* ======================= */
+
+/* Page container */
+.page {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #fff3f3;
+  color: #b81010fd;
+  font-weight: 500;
+  min-height: 80vh; /* ensure page fills screen */
+}
+
+/* Content wrapper */
+.About-Div {
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Page headings */
+.About-Div h2,
+.About-Div h3 {
+  color: #b22222;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.About-Div h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.About-Div h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+/* Paragraphs */
+.about-para {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #4c0000;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.About-Div ul.about-para {
+  list-style: disc inside;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Training logo */
+.training-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  animation: logoBounce 2s ease-in-out infinite;
+  margin: 0 auto; /* center logo */
+}
+
+/* Logo animation */
+@keyframes logoBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ======================= */
+/* Responsive Styling      */
+/* ======================= */
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .About-Div h2 { font-size: 1.8rem; }
+  .About-Div h3 { font-size: 1.3rem; }
+  .about-para { font-size: 0.95rem; }
+  .training-logo { width: 70px; height: 70px; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .page {
+    padding-top: 80px; /* leave space under fixed navbar */
+  }
+
+  .About-Div {
+    width: 95%;
+    gap: 12px;
+  }
+
+  .About-Div h2 { font-size: 1.6rem; text-align: center; }
+  .About-Div h3 { font-size: 1.2rem; text-align: center; }
+  .about-para { font-size: 0.9rem; text-align: justify; }
+  .About-Div ul.about-para { margin-left: 15px; }
+  .training-logo { width: 60px; height: 60px; }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .page {
+    padding-top: 100px; /* extra spacing for smaller screens */
+  }
+
+  .About-Div {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .About-Div h2 { font-size: 1.4rem; text-align: center; }
+  .About-Div h3 { font-size: 1.1rem; text-align: center; }
+  .about-para { font-size: 0.85rem; text-align: center; line-height: 1.5; }
+  .About-Div ul.about-para { margin-left: 10px; padding-left: 10px; font-size: 0.85rem; }
+  .training-logo { width: 50px; height: 50px; }
+}
