@@ -63,7 +63,7 @@
 }
 
 /* Smaller mobile adjustments */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 340px) {
   .nav-links {
     width: 180px;
     padding: 10px;
