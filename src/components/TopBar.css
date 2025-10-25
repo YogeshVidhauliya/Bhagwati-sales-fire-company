@@ -49,7 +49,7 @@
 /* ======================= */
 /* Mobile View (Topbar)    */
 /* ======================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 350px) {
 
   .topbar {
     font-size: 10px;

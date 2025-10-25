@@ -1,0 +1,13 @@
+/* Default styles for Contact page */
+.contact-page {
+  margin-top: 50px; /* default margin-top for desktop/other screens */
+  padding: 20px;
+}
+
+/* Media query for mobile devices: width between 350px and 600px */
+@media (min-width: 350px) and (max-width: 600px) {
+  .contact-page {
+    margin-top: 115px;
+  }
+  
+}
